@@ -1,0 +1,25 @@
+{
+  "name": "step-project-forkio",
+  "version": "1.0.0",
+  "description": "group project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwanttosmile4u/step-project-forkio.git"
+  },
+  "author": "Olha Matushevych, Tania Panasiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwanttosmile4u/step-project-forkio/issues"
+  },
+  "homepage": "https://github.com/iwanttosmile4u/step-project-forkio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
