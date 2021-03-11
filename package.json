@@ -17,9 +17,6 @@
   },
   "homepage": "https://github.com/iwanttosmile4u/step-project-forkio#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "gulp": "^4.0.2"
   }
 }
