@@ -1,35 +1,79 @@
 const gulp = require("gulp"),
-concat = require("gulp-concat");
+  concat = require("gulp-concat"),
+  imagemin = require("gulp-imagemin"),
+  clean = require("gulp-clean"),
+  browserSync = require("browser-sync").create(),
+  autoprefixer = require("gulp-autoprefixer"),
+  sass = require("@selfisekai/gulp-sass"),
+  cleanCSS = require("gulp-clean-css"),
+  uglify = require("gulp-uglify");
 
+sass.compiler = require("sass");
 
 const paths = {
-    html: "./index.html",
-src: {
-    scss:"./src/**/*.scss",
-    js:"./src/*.js",
-    img: "./src/*.png"
+  src: {
+    scss: "./src/scss/**/*.scss",
+    js: "./src/js/*.js",
+    img: "./src/img/**/*",
   },
-  build: {
-    css: "./build/css/",
-    js: "./build/js/",
-    img: "./build/img/",
-    self: "./build/",
+  dist: {
+    css: "./dist/css/",
+    js: "./dist/js/",
+    img: "./dist/img/",
+    self: "./dist/",
   },
 };
 
-
 const buildJS = () =>
-    gulp
-        .src(paths.src.js)
-        .pipe(concat("script.js"))
-.pipe(gulp.dest(paths.build.js));
-
-const buildCSS = () =>
-    gulp
-        .src(paths.src.scss)
-        .pipe(sass().on("error", sass.logError))
-.pipe(gulp.dest(paths.build.css))
+  gulp
+    .src(paths.src.js)
+    .pipe(concat("scripts.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.dist.js))
     .pipe(browserSync.stream());
 
+const buildCSS = () =>
+  gulp
+    .src(paths.src.scss)
+    .pipe(concat("styles.min.css"))
+    .pipe(sass().on("error", sass.logError))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    // .pipe(
+    //   autoprefixer({
+    //     overrideBrowserslist: ["last 5 versions"],
+    //     cascade: true,
+    //   })
+    // )
+    .pipe(gulp.dest(paths.dist.css))
+    .pipe(browserSync.stream());
 
+const buildIMG = () =>
+  gulp
+    .src(paths.src.img)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.dist.img))
+    .pipe(browserSync.stream());
 
+const cleanDist = () => gulp.src(paths.dist.self).pipe(clean());
+
+const watcher = () => {
+  browserSync.init({
+    server: {
+      baseDir: "./",
+    },
+  });
+  gulp.watch(paths.src.scss, buildCSS).on("change", browserSync.reload);
+  gulp.watch(paths.src.js, buildJS).on("change", browserSync.reload);
+  gulp.watch(paths.src.img, buildIMG).on("change", browserSync.reload);
+};
+
+gulp.task(
+  "default",
+  gulp.series(cleanDist, gulp.parallel(buildCSS, buildJS, buildIMG)),
+  watcher
+);
