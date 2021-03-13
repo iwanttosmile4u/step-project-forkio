@@ -74,6 +74,5 @@ const watcher = () => {
 
 gulp.task(
   "default",
-  gulp.series(cleanDist, gulp.parallel(buildCSS, buildJS, buildIMG)),
-  watcher
+  gulp.series(cleanDist, gulp.parallel(buildCSS, buildJS, buildIMG), watcher)
 );

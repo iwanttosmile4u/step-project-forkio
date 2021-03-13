@@ -1,10 +1,10 @@
 @import "_reset.scss";
 @import "_variables.scss";
 
-@import "sections/header-block";
-@import "sections/block-after-header";
-@import "sections/functional";
-@import "sections/people-talking";
-@import "sections/pricing";
+@import "sections/_header-block";
+@import "sections/_block-after-header";
+@import "sections/_functional";
+@import "sections/_people-talking";
+@import "sections/_pricing";
 
-@import "sections/media/media";
+@import "sections/media/_media";
