@@ -37,18 +37,18 @@ const buildCSS = () =>
     .src(paths.src.scss)
     .pipe(concat("styles.min.css"))
     .pipe(sass().on("error", sass.logError))
-    .pipe(
-      autoprefixer({
-        cascade: false,
-      })
-    )
-    .pipe(cleanCSS({ compatibility: "ie8" }))
     // .pipe(
     //   autoprefixer({
-    //     overrideBrowserslist: ["last 5 versions"],
-    //     cascade: true,
+    //     cascade: false,
     //   })
     // )
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 5 versions"],
+        cascade: true,
+      })
+    )
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.stream());
 
