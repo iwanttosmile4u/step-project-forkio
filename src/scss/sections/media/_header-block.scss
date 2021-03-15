@@ -1,6 +1,32 @@
-@media(min-width: 768px)  {
-.logo__link{
+@media(min-width: 768px) {
+  .logo{
+    &__link-text{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #8D81AC;
+      text-decoration: none;
+    }
+
+  }
 
 }
 
+@media (min-width: 768px) {
+  .header {
+    &__main {
+      min-height: 118px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    &__top {
+      width: 145px;
+    }
+  }
 }

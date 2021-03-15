@@ -1,12 +1,7 @@
-//.container{
-//  padding: 0 15px;
-//}
-
 .header {
   &__main{
     background: #27262A;
     min-height: 103px;
-    //width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,20 +37,21 @@
       border-radius: 5px;
       position: absolute;
     }
-    &__long {
+
+    &::after {
+      content: "";
       width: 26px;
       height: 3px;
       background: $textLight;
       border-radius: 5px;
+      position: absolute;
+      box-shadow: 0 8px 0 0 $textLight;
     }
 
-    //&::after {
-    //  content: "";
-    //  width: 26px;
-    //  height: 3px;
-    //  background: $textLight;
-    //  border-radius: 5px;
-    //  position: absolute;
-    //  box-shadow: 0 8px 0 0 $textLight;
-    }
   }
+}
+.logo{
+  &__link-text{
+    display: none;
+  }
+}
