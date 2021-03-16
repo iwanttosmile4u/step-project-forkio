@@ -1,3 +1,4 @@
+
 .header {
   &__main{
     background: #27262A;
@@ -54,4 +55,60 @@
   &__link-text{
     display: none;
   }
+}
+
+.fork-app {
+  //position: relative;
+  height: 615px;
+  padding-top: 35px;
+  background-size: cover;
+  //background-color: #010005;
+  background-image: url("/src/img/header/header-fon.png");
+  background-repeat: no-repeat;
+  //background-position: 50% 50%;
+
+  &__title {
+    margin-bottom: 15px;
+    color: $textLight;
+    font-size: 48px;
+    font-family: $mainFont;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    line-height: 2;
+  }
+
+  &--violet {
+    color: $accentColor;
+    font-size: 18px;
+  }
+
+  &--grey {
+    color: #848e97;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+
+  &__download-btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 15px 10px;
+    border: 1px solid $accentColor;
+    border-radius: 25px;
+    background-color: $accentColor;
+    color: $textLight;
+    font-size: 18px;
+    font-family: $mainFont;
+    text-decoration: none;
+    text-align: center;
+    transition: color, background-color .2s;
+    outline: none;
+  }
+
 }
