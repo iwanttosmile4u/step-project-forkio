@@ -1,1 +1,8 @@
+@mixin contentPadding {
+  padding: 0 24px;
+}
 
+@mixin centerContent {
+  font-size: 14px;
+  text-align: $textCenter;
+}
