@@ -1,8 +1,5 @@
 .functional {
   @include contentPadding;
-}
-
-.functional {
   &__main-header {
     font-family: $mainFont;
     font-weight: bold;
@@ -19,9 +16,6 @@
     &::after {
       content: ">";
     }
-  }
-  &__examle-img {
-    padding-top: 20px;
   }
 }
 
@@ -51,6 +45,7 @@
     line-height: 16px;
     color: #323232;
     padding: 27px 0 14px;
+    text-align: $textCenter;
   }
   &__description {
     font-family: $additionalFont;
@@ -59,5 +54,14 @@
     color: $descriptionColor;
     text-align: $textCenter;
     padding-bottom: 40px;
+  }
+}
+
+.user-options {
+  &__example-img {
+    background-image: url("../img/backgrounds/editor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 381px;
   }
 }

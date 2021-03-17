@@ -4,4 +4,41 @@
       padding: 140px 0 50px;
     }
   }
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    &__icon--tube {
+      padding-bottom: 2%;
+    }
+    &__text-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+
+      &--padding-sirqle {
+        padding-left: 6%;
+      }
+      &--padding-tube {
+        padding-left: 10%;
+      }
+      &--padding-clock {
+        padding-left: 8%;
+      }
+      &--header {
+        line-height: 21px;
+        text-align: left;
+      }
+      &--text {
+        text-align: left;
+      }
+    }
+  }
+  .user-options {
+    &__example-img {
+      background-image: url("../img/backgrounds/editor_768.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 519px;
+    }
+  }
 }
