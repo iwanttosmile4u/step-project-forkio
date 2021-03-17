@@ -6,7 +6,8 @@ const gulp = require("gulp"),
   autoprefixer = require("gulp-autoprefixer"),
   sass = require("@selfisekai/gulp-sass"),
   cleanCSS = require("gulp-clean-css"),
-  uglify = require("gulp-uglify");
+  uglify = require("gulp-uglify"),
+  rename = require("gulp-rename");
 
 sass.compiler = require("sass");
 
@@ -27,8 +28,8 @@ const paths = {
 const buildJS = () =>
   gulp
     .src(paths.src.js)
-    .pipe(concat("scripts.min.js"))
     .pipe(uglify())
+    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.dist.js))
     .pipe(browserSync.stream());
 
@@ -36,7 +37,6 @@ const buildCSS = () =>
   gulp
     .src(paths.src.scss)
     .pipe(sass().on("error", sass.logError))
-    .pipe(concat("styles.min.css"))
     // .pipe(
     //   autoprefixer({
     //     cascade: false,
@@ -49,6 +49,7 @@ const buildCSS = () =>
         cascade: true,
       })
     )
+    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.stream());
 
@@ -59,7 +60,8 @@ const buildIMG = () =>
     .pipe(gulp.dest(paths.dist.img))
     .pipe(browserSync.stream());
 
-const cleanDist = () => gulp.src(paths.dist.self).pipe(clean());
+const cleanDist = () =>
+  gulp.src(paths.dist.self, { allowEmpty: true }).pipe(clean());
 
 const watcher = () => {
   browserSync.init({
