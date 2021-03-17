@@ -35,8 +35,8 @@ const buildJS = () =>
 const buildCSS = () =>
   gulp
     .src(paths.src.scss)
-    .pipe(concat("styles.min.css"))
     .pipe(sass().on("error", sass.logError))
+    .pipe(concat("styles.min.css"))
     // .pipe(
     //   autoprefixer({
     //     cascade: false,

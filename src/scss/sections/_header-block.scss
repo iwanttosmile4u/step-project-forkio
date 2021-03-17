@@ -1,14 +1,23 @@
 
+.container{
+  min-width: $minWidth;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 .header {
-  &__main{
+  &__main {
     background: #27262A;
+    min-width: $minWidth;
     min-height: 103px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
   }
-  }
+}
 
 .btn {
   &__top {
@@ -48,24 +57,24 @@
       position: absolute;
       box-shadow: 0 8px 0 0 $textLight;
     }
-
   }
 }
-.logo{
-  &__link-text{
+
+.logo {
+  &__link-text {
     display: none;
   }
 }
 
 .fork-app {
-  //position: relative;
+  position: relative;
   height: 615px;
   padding-top: 35px;
   background-size: cover;
   //background-color: #010005;
-  background-image: url("/src/img/header/header-fon.png");
+  background-image: url("../img/header/header-fon.png");
   background-repeat: no-repeat;
-  //background-position: 50% 50%;
+  background-position: 50% 50%;
 
   &__title {
     margin-bottom: 15px;
@@ -73,24 +82,27 @@
     font-size: 48px;
     font-family: $mainFont;
     text-align: center;
+    font-weight: bold;
   }
 
   &__subtitle {
     text-align: center;
-    line-height: 2;
-  }
-
-  &--violet {
-    color: $accentColor;
     font-size: 18px;
-  }
+    line-height: 2;
+    color: $accentColor;
+    font-family: $mainFont;
 
-  &--grey {
-    color: #848e97;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+    &--violet {
+      color: $accentColor;
+      font-size: 18px;
+    }
 
+    &--grey {
+      color: #848e97;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
 
   &__download-btn {
     position: absolute;
@@ -110,5 +122,4 @@
     transition: color, background-color .2s;
     outline: none;
   }
-
 }
