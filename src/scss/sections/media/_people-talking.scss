@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 481px){
-  .people-talking{
+  .people-talking {
     display: grid;
     grid-column-gap: 10px;
     justify-items: center;
@@ -19,11 +19,12 @@
       margin-top: 58px;
       font-family: Lato,sans-serif;
       font-size: 14px;
-      color:#645766;
+      line-height: 21px;
+      color:#A291A5;
     }
     &__line{
       margin-top: 15px;
-      width: 699px;
+      width: 670px;
     }
   }
 

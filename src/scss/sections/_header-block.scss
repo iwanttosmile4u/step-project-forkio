@@ -1,14 +1,7 @@
-// .container {
-//  margin: 0 auto;
-//  &__menu{
-//    width: 100%
-//  }
-// }
 
 .header {
   &__main {
     background: #27262A;
-    min-width: $minWidth;
     min-height: 103px;
     display: flex;
     justify-content: space-between;

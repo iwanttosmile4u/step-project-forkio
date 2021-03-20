@@ -14,14 +14,15 @@
 
 
 .body {
-  max-width: 1200px;
-  min-width: 320px;
+  overflow-x: hidden;
 }
 
 .container{
-  width: 100%;
+  min-width: $minWidth;
+  max-width: $maxWidth;
   margin: 0 auto;
   padding: 0 10px;
   box-sizing: border-box;
 }
+
 
