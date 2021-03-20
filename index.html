@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forkio</title>
-    <!-- <link rel="stylesheet" href="src/css/_reset.scss" /> -->
+     <link rel="stylesheet" href="src/css/_reset.scss" />
     <link rel="stylesheet" href="dist/css/styles.min.css" />
   </head>
   <body>
@@ -24,14 +24,14 @@
           <button class="btn__top">Buy Now</button>
         </div>
         <div class="container__menu">
-          <ul class="navbar__list">
-            <li class="navbar__list-item"><a href="#"></a>Overview</li>
-            <li class="navbar__list-item"><a href="#"></a>About Fork</li>
-            <li class="navbar__list-item"><a href="#"></a>Buying Options</li>
-            <li class="navbar__list-item"><a href="#"></a>Support</li>
+          <ul class="navbar hidden">
+            <li class="navbar__list-item"><a href="#">Overview</a></li>
+            <li class="navbar__list-item"><a href="#">About Fork</a></li>
+            <li class="navbar__list-item"><a href="#">Buying Options</a></li>
+            <li class="navbar__list-item"><a href="#">Support</a></li>
           </ul>
         </div>
-        <div class="menu">
+        <div id="dropbtn" class="menu">
           <div class="menu_btn burger">
             <div class="burger-sort"></div>
             <div class="burger-long"></div>
@@ -41,12 +41,12 @@
             <i id="menu_close" class="fas fa-times"></i>
           </div>
 
-          <ul class="menu__list none">
-            <li class="menu__list-item"><a href="#"></a>Home</li>
-            <li class="menu__list-item"><a href="#"></a>Overview</li>
-            <li class="menu__list-item"><a href="#"></a>About Fork</li>
-            <li class="menu__list-item"><a href="#"></a>Buying Options</li>
-            <li class="menu__list-item"><a href="#"></a>Support</li>
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#">Home</a></li>
+            <li class="menu__list-item"><a href="#">Overview</a></li>
+            <li class="menu__list-item"><a href="#">About Fork</a></li>
+            <li class="menu__list-item"><a href="#">Buying Options</a></li>
+            <li class="menu__list-item"><a href="#">Support</a></li>
           </ul>
         </div>
       </nav>
@@ -247,105 +247,53 @@
     /> -->
         <div class="user-options__example-img"></div>
       </section>
-      <section class="people-talking">
-        <section class="mentions">
-          <div class="container">
-            <div class="section-title-three">
-              <h2 class="section-title-three__heading">
-                People Are Talking About Fork
-              </h2>
-            </div>
-
-            <ul class="mentions-list">
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_1.png"
-                  alt="smashing magazine logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
-                  amet. Proin id dignissim magna. Sed varius urna et pulvinar
-                  venenatis.
-                </p>
-              </li>
-
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_2.png"
-                  alt="codrops logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  Donec euismod dolor ut ultricies consequat. Vivamus urna
-                  ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
-                </p>
-              </li>
-
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_3.png"
-                  alt="codrops logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  In efficitur in velit et tempus. Duis nec odio dapibus,
-                  suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor
-                  felis ac vehicula.
-                </p>
-              </li>
-
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_4.png"
-                  alt="codrops logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
-                  amet. Proin id dignissim magna. Sed varius urna et pulvinar
-                  venenatis.
-                </p>
-              </li>
-
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_5.png"
-                  alt="codrops logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  Praesent ut eros tristique, malesuada lectus vel, lobortis
-                  massa. Nulla faucibus lorem id arcu consequat faucibus.
-                </p>
-              </li>
-
-              <li class="mentions-item">
-                <img
-                  src="dist/img/img_part1/fork1_6.png"
-                  alt="codrops logo"
-                  class="mentions-item__img"
-                />
-                <p class="mentions-item__text">
-                  Fusce pharetra erat id odio blandit, nec pharetra eros
-                  venenatis. Pellentesque porttitor cursus massa et vestibulum.
-                </p>
-              </li>
-            </ul>
-            <div class="section-bottom-three">
-              <p class="section-bottom-three__footer">
-                Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi
-                mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec
-                eget elit eu libero tincidunt consequat nec elementum orci. Cum
-                sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </p>
-            </div>
+      <section class="people-talking container">
+          <h2 class="people__slogan">
+              People Are Talking About Fork
+          </h2>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo.png" alt="not found">
+              </div>
+              <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
           </div>
-        </section>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo-1.png" alt="not found">
+              </div>
+              <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+          </div>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo-2.png" alt="not found">
+              </div>
+              <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
+          </div>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo-3.png" alt="not found">
+              </div>
+              <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+          </div>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo-4.png" alt="not found">
+              </div>
+              <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+          </div>
+          <div class="card">
+              <div class="card__img-minwidth">
+                  <img class="card__img" src="dist/assets/img/people_talk/logo-5.png" alt="not found">
+              </div>
+              <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+          </div>
+          <p class="people__text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+          <div class="people__line"></div>
       </section>
       <section class="pricing"></section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="dist/js/scripts.min.js"></script>
   </body>
 </html>

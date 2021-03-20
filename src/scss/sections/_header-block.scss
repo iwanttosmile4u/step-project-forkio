@@ -1,11 +1,9 @@
-
-.container{
-  min-width: $minWidth;
-  max-width: $maxWidth;
-  margin: 0 auto;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
+// .container {
+//  margin: 0 auto;
+//  &__menu{
+//    width: 100%
+//  }
+// }
 
 .header {
   &__main {
@@ -18,6 +16,14 @@
     padding: 0 15px;
   }
 }
+.container{
+  min-width: $minWidth;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 
 .btn {
   &__top {
@@ -30,41 +36,106 @@
   }
 }
 
-.menu {
-  &__right {
-    width: 40px;
-    height: 40px;
-    background: #27262A;
-    border: none;
-    position: relative;
-    display: flex;
-
-    &::after {
-      content: "";
-      width: 15px;
-      height: 3px;
-      background: $textLight;
-      border-radius: 5px;
-      position: absolute;
-    }
-
-    &::after {
-      content: "";
-      width: 26px;
-      height: 3px;
-      background: $textLight;
-      border-radius: 5px;
-      position: absolute;
-      box-shadow: 0 8px 0 0 $textLight;
-    }
-  }
-}
-
 .logo {
   &__link-text {
     display: none;
   }
 }
+
+.burger{
+  width: 27px;
+  height: 21px;
+  margin-bottom: 6px;
+  &-long{
+    display: block;
+    border: none;
+    background-color: $textLight;
+    color: $textLight;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  &-sort{
+    margin-left: 9px;
+    border: none;
+    background-color: #e6e4e4;;
+    color: #e6e4e4;
+    height: 4px;
+    width: 18px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+}
+
+.container__menu{
+  position: absolute;
+  top: 118px;
+  right: 0;
+  z-index: 1;
+}
+
+.navbar {
+display: flex;
+
+&_list{
+  width: 290px;
+  height: 88px;
+  left: 13px;
+  top: 194px;
+ } 
+}
+
+.header__main{
+  position: relative;
+  }
+
+
+.menu{
+  color: #e6e4e4;
+  font-size: 34px;
+  cursor: pointer;
+  &__list{
+    width: 100%;
+    line-height: 108px;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 101px;
+    padding-left: 33px;
+    &-item{
+      position: relative;
+    }
+  }
+
+  &__list-item:hover{
+    color: $accentColor;
+  }
+  &__list-item::before {
+    content: '';
+    height: 53px;
+    border-left: 3px $accentColor solid;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+  &__list-item:hover::before  {
+    opacity: 1;
+    position: absolute;
+    left: -33px;
+    top: 25px;
+  }
+  &__list-item{
+    font-size: 32px;
+    background-color: #303030;
+  }
+}
+
+.fas:hover .menu__list{
+  display: block;
+}
+
 
 .fork-app {
   position: relative;

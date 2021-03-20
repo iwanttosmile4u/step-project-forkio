@@ -9,7 +9,6 @@
       color: #8D81AC;
       text-decoration: none;
     }
-
   }
 }
 
@@ -30,3 +29,49 @@
   }
 }
 
+@media screen and (min-width: 481px) {
+  .container{
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .logo{
+    &__text{
+      display: inline-block;
+    }
+  }
+  .menu{
+    display: none;
+  }
+  .container__menu{
+    background-color: #333333;
+    .navbar__list{
+      color: white;
+      &-item{
+        margin-left: 30px;
+      }
+    }
+  }
+  .btn{
+    position: static;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .btn {
+    position: relative;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1300px;
+  }
+}
