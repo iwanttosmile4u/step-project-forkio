@@ -9,49 +9,27 @@
   </head>
   <body>
     <header class="header container">
-      <nav class="header__main">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img
-              class="logo__link-img"
-              src="./src/img/header/logo.png"
-              alt="logo"
-            />
-            <span class="logo__link-text">ForkIO</span>
+          <a class="header__link" href="#">
+            <div class="header__link-img"></div>
+            <span class="header__link-slogan">ForkIO</span>
           </a>
-        </div>
-        <div class="btn">
-          <button class="btn__top">Buy Now</button>
-        </div>
-        <div class="container__menu">
-          <ul class="navbar hidden">
-            <li class="navbar__list-item"><a href="#">Overview</a></li>
-            <li class="navbar__list-item"><a href="#">About Fork</a></li>
-            <li class="navbar__list-item"><a href="#">Buying Options</a></li>
-            <li class="navbar__list-item"><a href="#">Support</a></li>
-          </ul>
-        </div>
-        <div id="dropbtn" class="menu">
-          <div class="menu_btn burger">
-            <div class="burger-sort"></div>
-            <div class="burger-long"></div>
-            <div class="burger-long"></div>
-          </div>
-          <div class="menu_btn close-menu">
-            <i id="menu_close" class="fas fa-times"></i>
-          </div>
-
-          <ul class="menu__list">
-            <li class="menu__list-item"><a href="#">Home</a></li>
-            <li class="menu__list-item"><a href="#">Overview</a></li>
-            <li class="menu__list-item"><a href="#">About Fork</a></li>
-            <li class="menu__list-item"><a href="#">Buying Options</a></li>
-            <li class="menu__list-item"><a href="#">Support</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="fork-app">
-        <div class="fork-app__content">
+          <button class="header__btn-top">Buy Now</button>
+          <div class="burger">
+            <input id ="burger-touch" type="checkbox">
+            <label class="burger__btn" for="burger-touch">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+            <ul class="menu">
+            <li><a href="#" class="menu__item">Overview</a> </li>
+            <li><a href="#" class="menu__item">About Fork</a> </li>
+            <li><a href="#" class="menu__item">Buying Options</a> </li>
+            <li><a href="#" class="menu__item">Support</a> </li>
+            </ul>
+         </div>
+      </header>
+      <div class="fork-app container">
           <h1 class="fork-app__title">Fork App</h1>
           <h2 class="fork-app__subtitle fork-app__subtitle--violet">
             A Real Gamechanger In The World Of Web-Development
@@ -59,10 +37,8 @@
           <h2 class="fork-app__subtitle fork-app__subtitle--grey">
             v. 2.8 For Mac and Windows
           </h2>
-        </div>
         <a href="#" class="fork-app__download-btn"> Download For Free Now </a>
       </div>
-    </header>
     <main class="main-block">
       <section class="block-after-header">
         <div class="content-block">
@@ -292,8 +268,7 @@
       </section>
       <section class="pricing"></section>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    
     <script src="dist/js/scripts.min.js"></script>
   </body>
 </html>

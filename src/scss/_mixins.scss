@@ -13,3 +13,32 @@
   align-items: center;
 }
 
+@mixin button($bgc,$borc,$fontColor,$bgh,$fontColorH){
+  border-radius: 25px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: color 0.3s linear;
+  color: $fontColor;
+  background-color: $bgc;
+  cursor: pointer;
+  &:hover{
+    border-color: $borc;
+    background-color: $bgh;
+    color: $fontColorH;
+  }
+}
+
+%button{
+  border-radius: 25px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: color 0.3s linear;
+  color: white;
+  background-color: #8d81ac;
+  cursor: pointer;
+  &:hover{
+    border-color: #8d81ac;
+    background-color: #fff;
+    color: #8d81ac;
+  }
+}
