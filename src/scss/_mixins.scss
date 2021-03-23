@@ -1,5 +1,5 @@
 @mixin contentPadding {
-  padding: 0 24px;
+  padding: 0 10px;
 }
 
 @mixin centerContent {
@@ -7,8 +7,16 @@
   text-align: $textCenter;
 }
 
-@mixin flexColumn {
+@mixin flexible {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin zeroPadding {
+  padding-right: 0;
+}
+
+@mixin zeroPaddingLeft {
+  padding-left: 0;
 }

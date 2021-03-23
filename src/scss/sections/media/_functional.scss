@@ -2,28 +2,36 @@
   .functional {
     &__main-header {
       padding: 140px 0 50px;
+      font-size: 42px;
+      line-height: 44px;
     }
   }
   .content-wrapper {
     display: flex;
     flex-direction: row;
-    &__icon--tube {
-      padding-bottom: 2%;
-    }
+    // &__icon--tube {
+    //   padding-bottom: 2%;
+    // }
+    // &__img-block {
+    //   width: 120px;
+    //   margin-right: 20px;
+    // }
+
     &__text-wrapper {
       display: flex;
       flex-direction: column;
-      padding-left: 24px;
+      margin-left: 40px;
+      // padding-left: 24px;
 
-      &--padding-sirqle {
-        padding-left: 6%;
-      }
-      &--padding-tube {
-        padding-left: 10%;
-      }
-      &--padding-clock {
-        padding-left: 8%;
-      }
+      // &--padding-sirqle {
+      //   padding-left: 6%;
+      // }
+      // &--padding-tube {
+      //   padding-left: 10%;
+      // }
+      // &--padding-clock {
+      //   padding-left: 8%;
+      // }
       &--header {
         line-height: 21px;
         text-align: left;
@@ -33,12 +41,77 @@
       }
     }
   }
+
+  // .img-block {
+  //   width: 120px;
+  //   margin-right: 20px;
+  //   &__icon-search {
+  //     width: 111px;
+  //   }
+  //   .icon-sirqle {
+  //     width: 90px;
+  //     height: 80px;
+  //   }
+  // }
+
+  // .icon-tube {
+  //   width: 60px;
+  // }
+
   .user-options {
     &__example-img {
       background-image: url("../img/backgrounds/editor_768.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 519px;
+    }
+  }
+
+  .editor-content {
+    &__editor-img {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-options {
+    background-color: #f4f4f4;
+  }
+
+  .functional {
+    @include zeroPadding;
+    @include zeroPaddingLeft;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .editor-content {
+    &__header {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 50px;
+      padding: 94px 0 18px;
+    }
+    &__editor-img {
+      display: inline-block;
+    }
+  }
+
+  .options-list {
+    padding: 94px 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    &__text-wrapper {
+      padding-left: 24px;
+    }
+  }
+
+  .user-options {
+    &__example-img {
+      display: none;
     }
   }
 }

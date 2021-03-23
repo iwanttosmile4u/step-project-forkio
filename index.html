@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="dist/css/styles.min.css" />
   </head>
   <body>
-    <header class="header-block">
-      <div class="menu"></div>
-      <div class="header-text"></div>
-      <div class="header-btn"></div>
-    </header>
-    <main class="main-block">
-      <section class="block-after-header">
+    <div class="container">
+      <header class="header-block">
+        <div class="menu"></div>
+        <div class="header-text"></div>
+        <div class="header-btn"></div>
+      </header>
+      <main class="main-block">
+        <!-- <section class="block-after-header">
         <div class="content-block">
           <p class="content-block__top-description">
             Unlimited 30-Days Trial Period
@@ -93,113 +94,193 @@
       </section>
       <section class="user-options">
         <section class="functional">
-          <h1 class="functional__main-header">Here is what you get</h1>
-
-          <div class="content-wrapper">
+          <div class="editor-content">
+            <h1 class="functional__main-header editor-content__header">
+              Here is what you get
+            </h1>
             <img
-              class="content-wrapper__icon"
-              src="src/img/icons/icon_1.png"
-              alt="search icon"
+              class="editor-content__editor-img"
+              src="src/img/backgrounds/editor_1200.png"
             />
-            <div class="content-wrapper__text-wrapper">
-              <h3
-                class="content-wrapper__header content-wrapper__text-wrapper--header"
-              >
-                Creatred to Make The Web Better
-              </h3>
-              <p
-                class="content-wrapper__description content-wrapper__text-wrapper--text"
-              >
-                Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-                laoreet vulputate dignissim. Sed id metus id quam auctor
-                molestie eget ut augue.
-              </p>
-            </div>
           </div>
-
-          <div class="content-wrapper">
-            <img
-              class="content-wrapper__icon content-wrapper__icon--sircle"
-              src="src/img/icons/icon_2.png"
-              alt="search icon"
-            />
-            <div
-              class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-sirqle"
-            >
-              <h3
-                class="content-wrapper__header content-wrapper__text-wrapper--header"
-              >
-                Incredibly Powerful Tool
-              </h3>
-              <p
-                class="content-wrapper__description content-wrapper__text-wrapper--text"
-              >
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
+          <div class="options-list">
+            <div class="content-wrapper">
+              <img
+                class="content-wrapper__icon"
+                src="src/img/icons/icon_1.png"
+                alt="search icon"
+              />
+              <div class="content-wrapper__text-wrapper">
+                <h3
+                  class="content-wrapper__header content-wrapper__text-wrapper--header"
+                >
+                  Creatred to Make The Web Better
+                </h3>
+                <p
+                  class="content-wrapper__description content-wrapper__text-wrapper--text"
+                >
+                  Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
+                  dui laoreet vulputate dignissim. Sed id metus id quam auctor
+                  molestie eget ut augue.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="content-wrapper">
-            <img
-              class="content-wrapper__icon content-wrapper__icon--tube"
-              src="src/img/icons/icon_3.png"
-              alt="search icon"
-            />
-            <div
-              class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-tube"
-            >
-              <h3
-                class="content-wrapper__header content-wrapper__text-wrapper--header"
+            <div class="content-wrapper">
+              <img
+                class="content-wrapper__icon content-wrapper__icon--sircle"
+                src="src/img/icons/icon_2.png"
+                alt="search icon"
+              />
+              <div
+                class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-sirqle"
               >
-                Experimental Stuff
-              </h3>
-              <p
-                class="content-wrapper__description content-wrapper__text-wrapper--text"
-              >
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
+                <h3
+                  class="content-wrapper__header content-wrapper__text-wrapper--header"
+                >
+                  Incredibly Powerful Tool
+                </h3>
+                <p
+                  class="content-wrapper__description content-wrapper__text-wrapper--text"
+                >
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="content-wrapper">
-            <img
-              class="content-wrapper__icon content-wrapper__icon--clock"
-              src="src/img/icons/icon_4.png"
-              alt="search icon"
-            />
+            <div class="content-wrapper">
+              <div class="content-wrapper__img-block">
+                <img
+                  class="content-wrapper__icon content-wrapper__icon--tube icon-tube"
+                  src="src/img/icons/icon_3.png"
+                  alt="search icon"
+                />
+              </div>
+              <div
+                class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-tube"
+              >
+                <h3
+                  class="content-wrapper__header content-wrapper__text-wrapper--header"
+                >
+                  Experimental Stuff
+                </h3>
+                <p
+                  class="content-wrapper__description content-wrapper__text-wrapper--text"
+                >
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
+            </div>
 
-            <div
-              class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-clock"
-            >
-              <h3
-                class="content-wrapper__header content-wrapper__text-wrapper--header"
+            <div class="content-wrapper">
+              <img
+                class="content-wrapper__icon content-wrapper__icon--clock"
+                src="src/img/icons/icon_4.png"
+                alt="search icon"
+              />
+
+              <div
+                class="content-wrapper__text-wrapper content-wrapper__text-wrapper--padding-clock"
               >
-                Creatred to Make The Web Better
-              </h3>
-              <p
-                class="content-wrapper__description content-wrapper__text-wrapper--text"
-              >
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
+                <h3
+                  class="content-wrapper__header content-wrapper__text-wrapper--header"
+                >
+                  Creatred to Make The Web Better
+                </h3>
+                <p
+                  class="content-wrapper__description content-wrapper__text-wrapper--text"
+                >
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <!-- <img
+        <img
           class="user-options__example-img"
           src="src/img/backgrounds/editor.png"
           alt="editor"
-        /> -->
+        />
         <div class="user-options__example-img"></div>
+      </section> -->
+        <section class="people-talking"></section>
+
+        <section class="pricing">
+          <h2 class="pricing__header">Fork Subscription Pricing</h2>
+          <section class="pricing__pc-version">
+          <section class="pricing__wrapper">
+          <div class="pricing__item">
+            <div class="pricing__top-background">
+              <p class="pricing__top-background-title">Students</p>
+            </div>
+            <div class="pricing__bottom-background">
+              <p class="pricing__bottom-background-price">$29</p>
+              <p class="pricing__bottom-background-duration">per month</p>
+              <p class="pricing__bottom-background-benefit">Personal License</p>
+              <a class="pricing__bottom-background-btn pricing__bottom-background-btn--equal" href="#">purchase</a>
+            </div>
+          </div>
+
+          <div class="pricing__item pricing__item--margin">
+            <div class="pricing__top-background">
+              <p class="pricing__top-background-title">professional</p>
+            </div>
+            <div class="pricing__bottom-background">
+              <p class="pricing__bottom-background-price">$59</p>
+              <p class="pricing__bottom-background-duration">per month</p>
+              <p class="pricing__bottom-background-benefit">
+                Professional License<br>Email Support</br>
+              </p>
+              <a class="pricing__bottom-background-btn pricing__bottom-background-btn--margin" href="#">purchase</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing__wrapper">
+          <div class="pricing__item pricing__item--core">
+            <div
+              class="pricing__top-background pricing__top-background--highlighted"
+            >
+              <p class="pricing__top-background-title">agency</p>
+            </div>
+            <div
+              class="pricing__bottom-background pricing__bottom-background--highlighted"
+            >
+              <p class="pricing__bottom-background-price">$99</p>
+              <p class="pricing__bottom-background-duration">per month</p>
+              <p class="pricing__bottom-background-benefit">
+                1-12 Team Members<br>Phone Support</br>
+              </p>
+              <a class="pricing__bottom-background-btn" href="#">purchase</a>
+            </div>
+          </div>
+
+          <div class="pricing__item pricing__item--last-item">
+            <div class="pricing__top-background">
+              <p class="pricing__top-background-title">enterprise</p>
+            </div>
+            <div
+              class="pricing__bottom-background pricing__bottom-background--margin"
+            >
+              <p class="pricing__bottom-background-price">$159</p>
+              <p class="pricing__bottom-background-duration">per month</p>
+              <p class="pricing__bottom-background-benefit pricing__bottom-background-benefit--line-height">
+                Unlimited Team Members<br>24/7 Phone Support</br>
+              </p>
+              <a class="pricing__bottom-background-btn" href="#">purchase</a>
+            </div>
+          </div>
+        </section>
+        </section>
       </section>
-      <section class="people-talking"></section>
-      <section class="pricing"></section>
-    </main>
+      </main>
+    </div>
     <script src="dist/js/scripts.min.js"></script>
   </body>
 </html>

@@ -20,7 +20,8 @@
 }
 
 .content-wrapper {
-  @include flexColumn;
+  @include flexible;
+  padding-bottom: 40px;
 
   &__icon {
     width: 111px;
@@ -53,7 +54,7 @@
     line-height: 21px;
     color: $descriptionColor;
     text-align: $textCenter;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
 }
 
@@ -63,5 +64,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 381px;
+  }
+}
+
+.editor-content {
+  &__editor-img {
+    display: none;
   }
 }
