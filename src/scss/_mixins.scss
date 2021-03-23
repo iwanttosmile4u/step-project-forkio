@@ -4,13 +4,18 @@
 
 @mixin centerContent {
   font-size: 14px;
-  text-align: $textCenter;
+  text-align: center;
 }
 
 @mixin flexible {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin flexibleRow {
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin zeroPadding {
