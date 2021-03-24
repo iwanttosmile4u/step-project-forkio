@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="dist/css/styles.min.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header-block">
-        <div class="menu"></div>
-        <div class="header-text"></div>
-        <div class="header-btn"></div>
+    <header class="header container">
+          <a class="header__link" href="#">
+            <div class="header__link-img"></div>
+            <span class="header__link-slogan">ForkIO</span>
+          </a>
+          <button class="header__btn-top">Buy Now</button>
+          <div class="burger">
+            <input id ="burger-touch" type="checkbox">
+            <label class="burger__btn" for="burger-touch">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+            <ul class="menu">
+            <li><a href="#" class="menu__item">Overview</a> </li>
+            <li><a href="#" class="menu__item">About Fork</a> </li>
+            <li><a href="#" class="menu__item">Buying Options</a> </li>
+            <li><a href="#" class="menu__item">Support</a> </li>
+            </ul>
+         </div>
       </header>
-      <main class="main-block">
-        <section class="block-after-header">
+      <div class="fork-app container">
+          <h1 class="fork-app__title">Fork App</h1>
+          <h2 class="fork-app__subtitle fork-app__subtitle--violet">
+            A Real Gamechanger In The World Of Web-Development
+          </h2>
+          <h2 class="fork-app__subtitle fork-app__subtitle--grey">
+            v. 2.8 For Mac and Windows
+          </h2>
+        <a href="#" class="fork-app__download-btn"> Download For Free Now </a>
+        </div>
+    <div class="container">
+    <main class="main-block">
+      <section class="block-after-header">
         <div class="content-block">
           <p class="content-block__top-description">
             Unlimited 30-Days Trial Period
@@ -195,7 +221,49 @@
           </section>
         <div class="functional__example-img"></div>
       </section>
-        <section class="people-talking"></section>
+          <section class="people-talking container">
+            <h2 class="people-talking__slogan">
+                People Are Talking About Fork
+            </h2>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_1.png" alt="not found">
+                </div>
+                <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_2.png" alt="not found">
+                </div>
+                <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_3.png" alt="not found">
+                </div>
+                <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
+            </div>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_4.png" alt="not found">
+                </div>
+                <p class="card__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_5.png" alt="not found">
+                </div>
+                <p class="card__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="card">
+                <div class="card__img-minwidth">
+                    <img class="card__img" src="dist/img/people/fork1_6.png" alt="not found">
+                </div>
+                <p class="card__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+            </div>
+            <p class="people-talking__text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <div class="people-talking__line"></div>
+        </section>
 
         <section class="pricing">
           <h2 class="pricing__header">Fork Subscription Pricing</h2>
@@ -226,9 +294,9 @@
               <a class="pricing__bottom-background-btn pricing__bottom-background-btn--margin" href="#">purchase</a>
             </div>
           </div>
-        </section>
+          </section>
 
-        <section class="pricing__wrapper">
+          <section class="pricing__wrapper">
           <div class="pricing__item pricing__item--core">
             <div
               class="pricing__top-background pricing__top-background--highlighted"
@@ -265,7 +333,7 @@
         </section>
         </section>
       </section>
-      </main>
+    </main>
     </div>
     <script src="dist/js/scripts.min.js"></script>
   </body>

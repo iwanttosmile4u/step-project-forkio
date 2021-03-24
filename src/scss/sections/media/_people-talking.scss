@@ -1,0 +1,73 @@
+
+@media screen and (min-width: 481px){
+  .people-talking {
+    display: grid;
+    grid-column-gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+
+   &__slogan, &__text, &__line{
+      grid-column-start:1;
+      grid-column-end:3;
+    }
+    &__slogan{
+      font-size: 42px;
+    }
+    &__text{
+      width: 670px;
+      display: inline-block;
+      margin-top: 58px;
+      font-family: Lato,sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      color:#A291A5;
+    }
+    &__line{
+      margin-top: 15px;
+      width: 670px;
+    }
+  }
+
+  .card{
+    &__img{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-10%);
+
+      &-minwidth{
+        position: relative;
+        min-height: 154px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 993px){
+  
+  .people-talking{
+    grid-template-columns: repeat(3,1fr);
+    &__slogan, &__text, &__line{
+      grid-column-start:0;
+      grid-column-end:4;
+    }
+
+    &__slogan{
+      font-size: 47px;
+    }
+
+    &__text{
+      width: 859px;
+    }
+
+    &__line{
+      width: 779px;
+    }
+  }
+
+}
+@media screen and (min-width: 1201px){
+
+}
