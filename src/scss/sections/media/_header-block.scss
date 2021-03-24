@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    &__touch,  &__item{
+    &__btn{
       display: none;
     }
   }
@@ -89,6 +89,7 @@
   .header{
     grid-template-columns: 149px 1fr 170px ;
     grid-template-areas: 'link burger btn';
+    background-color: #010005;
   }
 
   .burger{
