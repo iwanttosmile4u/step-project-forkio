@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+@mixin flexibleRow {
+  display: flex;
+  flex-direction: row;
+}
+
 @mixin button($bgc, $borc, $fontColor, $bgh, $fontColorH) {
   border-radius: 25px;
   border: 1px solid transparent;
