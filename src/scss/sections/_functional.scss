@@ -6,7 +6,7 @@
     font-size: 32px;
     line-height: 38px;
     color: $accentColor;
-    text-align: $textCenter;
+    text-align: center;
     padding: 100px 0 36px;
 
     &::before {
@@ -17,58 +17,37 @@
       content: ">";
     }
   }
-}
-
-.content-wrapper {
-  @include flexible;
-  padding-bottom: 40px;
-
-  &__icon {
-    width: 111px;
-    height: 64px;
-    &--sircle {
-      width: 90px;
-      height: 80px;
-    }
-    &--tube {
-      width: 60px;
-      height: 84px;
-    }
-    &--clock {
-      width: 71px;
-      height: 71px;
-    }
+  &__wrapper {
+    @include flexible;
+    padding: 0 14px 40px;
   }
-
-  &__header {
+  &__wrapper-icon {
+    min-width: 112px;
+    display: flex;
+    justify-content: center;
+  }
+  &__wrapper-header {
     font-family: $mainFont;
     font-size: 16px;
     line-height: 16px;
     color: #323232;
     padding: 27px 0 14px;
-    text-align: $textCenter;
+    text-align: center;
   }
-  &__description {
+  &__wrapper-description {
     font-family: $additionalFont;
     font-size: 14px;
     line-height: 21px;
     color: $descriptionColor;
-    text-align: $textCenter;
-    // padding-bottom: 40px;
+    text-align: center;
   }
-}
-
-.user-options {
   &__example-img {
     background-image: url("../img/backgrounds/editor.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 381px;
   }
-}
-
-.editor-content {
-  &__editor-img {
+  &__example {
     display: none;
   }
 }

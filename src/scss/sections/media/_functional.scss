@@ -1,117 +1,75 @@
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .functional {
     &__main-header {
       padding: 140px 0 50px;
       font-size: 42px;
       line-height: 44px;
+      font-weight: bold;
     }
-  }
-  .content-wrapper {
-    display: flex;
-    flex-direction: row;
-    // &__icon--tube {
-    //   padding-bottom: 2%;
-    // }
-    // &__img-block {
-    //   width: 120px;
-    //   margin-right: 20px;
-    // }
-
-    &__text-wrapper {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 0 21px 60px;
+    }
+    &__text-content {
       display: flex;
       flex-direction: column;
-      margin-left: 40px;
-      // padding-left: 24px;
-
-      // &--padding-sirqle {
-      //   padding-left: 6%;
-      // }
-      // &--padding-tube {
-      //   padding-left: 10%;
-      // }
-      // &--padding-clock {
-      //   padding-left: 8%;
-      // }
-      &--header {
-        line-height: 21px;
-        text-align: left;
-      }
-      &--text {
-        text-align: left;
-      }
+      margin-left: 10px;
     }
-  }
-
-  // .img-block {
-  //   width: 120px;
-  //   margin-right: 20px;
-  //   &__icon-search {
-  //     width: 111px;
-  //   }
-  //   .icon-sirqle {
-  //     width: 90px;
-  //     height: 80px;
-  //   }
-  // }
-
-  // .icon-tube {
-  //   width: 60px;
-  // }
-
-  .user-options {
+    &__wrapper-header {
+      line-height: 21px;
+      text-align: left;
+      padding: 4px 0 11px;
+    }
+    &__wrapper-description {
+      font-family: $mainFont;
+      text-align: left;
+    }
     &__example-img {
       background-image: url("../img/backgrounds/editor_768.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 519px;
+      margin-bottom: 10px;
     }
-  }
-
-  .editor-content {
-    &__editor-img {
+    &__example {
       display: none;
     }
   }
 }
 
-@media (min-width: 1200px) {
-  .user-options {
-    background-color: #f4f4f4;
-  }
-
+@media (min-width: 993px) {
   .functional {
-    @include zeroPadding;
-    @include zeroPaddingLeft;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .editor-content {
-    &__header {
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 50px;
-      padding: 94px 0 18px;
-    }
-    &__editor-img {
-      display: inline-block;
-    }
-  }
-
-  .options-list {
-    padding: 94px 0;
-  }
-
-  .content-wrapper {
-    display: flex;
-    &__text-wrapper {
-      padding-left: 24px;
-    }
-  }
-
-  .user-options {
+    background-color: #f4f4f4;
+    position: relative;
     &__example-img {
       display: none;
+    }
+    &__example {
+      position: absolute;
+      width: 52%;
+      right: 0;
+      bottom: 8%;
+      height: 500px;
+      display: block;
+    }
+    &__main-header {
+      margin-top: 69px;
+      padding: 0;
+      font-size: 48px;
+      line-height: 50px;
+      font-weight: bold;
+      float: right;
+      width: 52%;
+    }
+    &__pc-content {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      padding: 80px 0 70px;
+    }
+    &__wrapper {
+      padding: 0 20px 17px;
     }
   }
 }
