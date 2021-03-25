@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .content-block {
     &__top-description {
       margin-top: 20px;
@@ -15,14 +15,15 @@
     }
   }
 
-  .buttons-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .buttons {
+    &__block {
+      @include flexibleRow;
+      justify-content: center;
+    }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .content-block {
     &__top-description {
       margin-top: 20px;
@@ -37,17 +38,16 @@
       font-size: 21px;
       line-height: 32px;
       padding: 0 150px;
-      text-align: $textCenter;
+      text-align: center;
     }
   }
 
-  .buttons-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .btns-wrapper {
-    padding-top: 26px;
+  .buttons {
+    padding: 26px 0 70px;
+    &__block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
