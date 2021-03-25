@@ -1,0 +1,109 @@
+.pricing {
+  background-image: url("../img/backgrounds/pricing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include contentPadding;
+  @include flexible;
+  padding-bottom: 15px;
+  &__header {
+    font-family: $mainFont;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 0 32px;
+  }
+  &__item {
+    max-width: 257px;
+    margin: 0 auto;
+  }
+  &__top-background {
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 100%;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__top-background-title {
+    font-family: $mainFont;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__bottom-background {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    @include flexible;
+    padding-top: 30px;
+    margin-bottom: 18px;
+  }
+  &__bottom-background-price {
+    font-family: $mainFont;
+    font-size: 60px;
+    line-height: 62px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__bottom-background-duration {
+    font-family: $mainFont;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 20px;
+    &::after {
+      content: "";
+      border: none;
+      background: #8d81ac;
+      height: 5px;
+      width: 60px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 38px;
+    }
+  }
+  &__bottom-background-benefit {
+    font-family: $mainFont;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0 38px;
+  }
+  &__bottom-background-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 163px;
+    height: 45px;
+    border-radius: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $mainFont;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 47px 67px;
+  }
+  &__item--core {
+    transform: scale(1.1);
+    margin: 43px 0 43px;
+  }
+  &__top-background--highlighted {
+    background-color: rgba(0, 0, 0, 0.11);
+  }
+  &__bottom-background--highlighted {
+    background-color: rgba(70, 48, 72, 0.4);
+  }
+  &__bottom-background--margin {
+    margin-bottom: 0;
+  }
+}
