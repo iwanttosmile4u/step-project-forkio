@@ -29,15 +29,28 @@
 
   &__link-slogan{
     display: none;
+    text-transform: uppercase;
   }
+
   &__btn-top{
     justify-self: center;
-    width: 117px;
+    width: 119px;
     height: 37px;
     grid-area: btn;
     font-size: 15px;
     font-weight: bold;
-    @include button(#8d81ac,#8d81ac,#fff,#fff,#8d81ac);
+    border-radius: 25px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: color 0.3s linear;
+    color: $textLight;
+    background-color: $accentColor;
+    cursor: pointer;
+    &:hover{
+      border-color: $accentColor;
+      background-color: $textLight;
+      color: $accentColor;
+    }
   }
 }
 
@@ -109,7 +122,6 @@
   width: 290px;
   z-index: 1;
   display: block;
-  visibility: hidden;
   margin: 0;
   &__item{
     display: block;
