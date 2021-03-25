@@ -111,13 +111,15 @@
    left: 0;
    margin-left: 15px;
  }
+ #burger-touch:checked ~ .menu{
+  opacity: 0;
+}
 } 
 
 .menu{
   transition: left 0.4s linear;
   position: absolute;
   top: 100%;
-  right:-100%;
   background-color: #333333;
   width: 290px;
   z-index: 1;
