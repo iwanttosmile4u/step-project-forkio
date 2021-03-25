@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 481px){
+@media (min-width: 481px){
   .people-talking {
     display: grid;
     grid-column-gap: 60px;
@@ -21,7 +21,6 @@
     }
     &__line{
       margin-top: 15px;
-      width: 670px;
     }
   }
 
@@ -42,7 +41,7 @@
 
 }
 
-@media screen and (min-width: 993px){
+@media (min-width: 993px){
   
   .people-talking{
     grid-template-columns: repeat(3,1fr);
