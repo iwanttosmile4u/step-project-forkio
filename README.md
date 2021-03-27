@@ -25,3 +25,9 @@ Tetiana Panasiuk:
 1. Block "Revolutionary editor".
 2. Functional for user after "Revolutionary editor" block.
 3. Pricing block.
+
+Github pages:
+
+https://olichka9940.github.io/
+
+https://iwanttosmile4u.github.io/
