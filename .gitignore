@@ -4,4 +4,4 @@ node_modules/**/*
 *.xml
 *.iml
 package-lock.json
-# dist/**/*
+dist/**/*
