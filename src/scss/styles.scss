@@ -1,6 +1,6 @@
 @import "_fonts";
-
 @import "_reset";
+
 @import "_variables";
 @import "_mixins";
 @import "_common";
@@ -12,3 +12,11 @@
 @import "sections/_pricing";
 
 @import "sections/media/_media";
+
+
+.body {
+  overflow-x: hidden;
+}
+
+
+
