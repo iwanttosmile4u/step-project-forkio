@@ -1,6 +1,6 @@
 
 .people-talking{
-  background: url("/dist/img/backgrounds/fork-bg.jpg") no-repeat;
+  background: url("../img/backgrounds/fork-bg.jpg") no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
     padding: 60px 10px 0 10px;
   }
   &__text{
-    padding-top: 37px;
+    padding: 37px 25px 0;
     font-family: $additionalFont;
     font-size: 14px;
     line-height: 21px;
@@ -25,7 +25,7 @@
 
   &__line{
     display: inline-block;
-    width: 245px;
+    width: 50%;
     height: 2px;
     background-color: #645766;
     margin-top: 22px;
