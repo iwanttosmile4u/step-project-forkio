@@ -25,15 +25,18 @@
       font-family: $mainFont;
       text-align: left;
     }
-    &__example-img {
+    &__example {
+      display: none;
+    }
+  }
+  .example {
+    &__img {
       background-image: url("../img/backgrounds/editor_768.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 519px;
       margin-bottom: 10px;
-    }
-    &__example {
-      display: none;
+      background-attachment: inherit;
     }
   }
 }
@@ -49,7 +52,7 @@
       position: absolute;
       width: 52%;
       right: 0;
-      bottom: 8%;
+      bottom: 6%;
       height: 500px;
       display: block;
     }
@@ -70,6 +73,11 @@
     }
     &__wrapper {
       padding: 0 20px 17px;
+    }
+  }
+  .example {
+    &__img {
+      display: none;
     }
   }
 }
