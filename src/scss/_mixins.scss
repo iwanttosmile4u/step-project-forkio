@@ -1,1 +1,19 @@
+@mixin contentPadding {
+  padding: 0 10px;
+}
 
+@mixin centerContent {
+  font-size: 14px;
+  text-align: center;
+}
+
+@mixin flexible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexibleRow {
+  display: flex;
+  flex-direction: row;
+}

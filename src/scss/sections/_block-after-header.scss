@@ -1,0 +1,74 @@
+.block-after-header {
+  @include contentPadding;
+}
+.content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13px;
+
+  &__top-description {
+    font-family: $mainFont;
+    line-height: 14px;
+    color: $descriptionColor;
+    text-align: center;
+  }
+
+  &__main-header {
+    font-family: $mainFont;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    color: #635c73;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0 27px;
+  }
+
+  &__description {
+    font-family: $additionalFont;
+    line-height: 20px;
+    color: #323232;
+    @include centerContent;
+    padding-bottom: 36px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__block {
+    margin: 0 4px 20px;
+  }
+  &__wrapper {
+    @include flexibleRow;
+    border-radius: 5px;
+    border: 0.5px solid silver;
+    max-width: 110px;
+  }
+  &__btn-item {
+    @include flexibleRow;
+    justify-content: space-between;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  &__btn-text {
+    padding: 1px 4px;
+    font-size: 12px;
+  }
+  &__btn-value {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 3px;
+    font-family: $additionalFont;
+  }
+  &__wrapper--star-width {
+    max-width: 100px;
+  }
+  &__wrapper--fork-width {
+    max-width: 95px;
+  }
+}

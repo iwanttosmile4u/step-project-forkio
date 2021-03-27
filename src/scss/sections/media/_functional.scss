@@ -1,0 +1,75 @@
+@media (min-width: 481px) {
+  .functional {
+    &__main-header {
+      padding: 140px 0 50px;
+      font-size: 42px;
+      line-height: 44px;
+      font-weight: bold;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 0 21px 60px;
+    }
+    &__text-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+    &__wrapper-header {
+      line-height: 21px;
+      text-align: left;
+      padding: 4px 0 11px;
+    }
+    &__wrapper-description {
+      font-family: $mainFont;
+      text-align: left;
+    }
+    &__example-img {
+      background-image: url("../img/backgrounds/editor_768.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 519px;
+      margin-bottom: 10px;
+    }
+    &__example {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .functional {
+    background-color: #f4f4f4;
+    position: relative;
+    &__example-img {
+      display: none;
+    }
+    &__example {
+      position: absolute;
+      width: 52%;
+      right: 0;
+      bottom: 8%;
+      height: 500px;
+      display: block;
+    }
+    &__main-header {
+      margin-top: 69px;
+      padding: 0;
+      font-size: 48px;
+      line-height: 50px;
+      font-weight: bold;
+      float: right;
+      width: 52%;
+    }
+    &__pc-content {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      padding: 80px 0 70px;
+    }
+    &__wrapper {
+      padding: 0 20px 17px;
+    }
+  }
+}

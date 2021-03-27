@@ -1,0 +1,49 @@
+
+.people-talking{
+  background: url("../img/backgrounds/fork-bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__slogan{
+    font-family: $mainFont;;
+    font-size: 36px;
+    font-weight: bold;
+    color: $textLight;
+    padding: 60px 10px 0 10px;
+  }
+  &__text{
+    padding: 37px 25px 0;
+    font-family: $additionalFont;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #A291A5;
+  }
+
+  &__line{
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #645766;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.card{
+  &__img{
+    margin: 35px 0 20px 0;
+  }
+  &__text{
+    color: $textLight;
+    font-family: $additionalFont;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 15px;
+  }
+}
