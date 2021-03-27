@@ -41,13 +41,18 @@
     color: $descriptionColor;
     text-align: center;
   }
-  &__example-img {
+  &__example {
+    display: none;
+  }
+}
+
+.example {
+  &__img {
     background-image: url("../img/backgrounds/editor.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 381px;
-  }
-  &__example {
-    display: none;
+    background-attachment: inherit;
+    margin-bottom: 10px;
   }
 }
